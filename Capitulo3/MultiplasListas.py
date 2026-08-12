@@ -1,4 +1,3 @@
-
 equipamentos = []
 valores = []
 seriais = []
@@ -27,7 +26,6 @@ for indice in range(0, len(equipamentos)): # <-- Aqui ele só define: "Vou rodar
 
 # ==============================================================================================================================================
 
-
 # Agora quero pesquisar um determinado dado:
 
 busca = input('Digite o nome do equipamento que deseja buscar: ')
@@ -41,7 +39,6 @@ for indice in range(0,len(equipamentos)):
 # use ESSE MESMO numero[indice] para ir buscar o preço certo na lista valores e o serial certo na lista seriais
 
 # ==============================================================================================================================================
-
 
 # Montar um codigo que será responsavel por depreciar(desvalorização após certo periodo) de 10%.
 
