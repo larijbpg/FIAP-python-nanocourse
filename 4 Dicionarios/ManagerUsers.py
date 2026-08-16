@@ -1,4 +1,4 @@
-from Funcoes import * # importo tudo o que está dentro do arquivo Funcoes
+from Funcoes_Dicionarios import * # importo tudo o que está dentro do arquivo Funcoes_Dicionarios
 
 usuarios = {}
 
