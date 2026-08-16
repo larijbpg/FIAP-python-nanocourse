@@ -9,7 +9,7 @@ while opcao == 'I' or opcao == 'P' or opcao == 'E' or opcao == 'L':
     if opcao == 'P':
         pesquisar(usuarios, input('Qual login deseja pesquisar? '))
     if opcao == 'E':
-        excluir(usuarios, input('Qual login deseja excluir? '))
+        excluir(usuarios, input('Qual código de lançamento deseja excluir? '))
     if opcao == 'L':
         listar(usuarios)
     opcao = perguntar()

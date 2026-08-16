@@ -12,16 +12,22 @@ def perguntar():
     return resposta
 
 def inserir(dicionario):
-    dicionario[input('Digite o login: ').upper()] = [input('Digite o nome: ').upper(),
-                                                     input('Digite a última data de acesso: '),
-                                                     input('Digite a última estação acessada: ').upper()]
+    dicionario[input('Digite o código do lançamento: ').upper()] = [input('Digite o login: ').upper(), 
+                                                                    input('Digite o nome: ').upper(),
+                                                                    input('Digite a hora: ').upper(),
+                                                                    input('Digite a última data de acesso: '),
+                                                                    input('Digite a última estação acessada: ').upper(),
+                                                                    input('Digite o nível do usuário: ').upper()]
 
 def pesquisar(dicionario, chave): #precisamos receber o dicionario onde vamos pesquisar e a chave que tem o dado que será pesquisado
     lista = dicionario.get(chave) # preencher uma lista com o resultado da pesquisa
     if lista != None: # caso a lista não esteja vazia (!=None) vamos exibir os 3 dados que compoe a lista
-        print('Nome...............: ' + lista[0])
-        print('Último acesso: ....: ' + lista[1])
-        print('Última estação.....: ' + lista[2])
+        print('Login...............: ' + lista[0])
+        print('Nome: ..............: ' + lista[1])
+        print('Hora................: ' + lista[2])
+        print('Último acesso.......: ' + lista[3])
+        print('Última estação......: ' + lista[4])
+        print('Nível do usuário....: ' + lista[5])
 
 
 def excluir (dicionario, chave):
@@ -33,5 +39,5 @@ def excluir (dicionario, chave):
 def listar(dicionario):
     for chave, valor in dicionario.items():
         print('Objeto.....')
-        print('Login: ', chave)
+        print('Código de lançamento: ', chave)
         print('Dados: ', valor)
