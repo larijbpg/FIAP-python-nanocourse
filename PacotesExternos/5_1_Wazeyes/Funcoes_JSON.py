@@ -13,7 +13,7 @@ def ler_arquivo(arquivo):
             dicionario = json.load(arq_json)
     else:
         dicionario = {}
-        return dicionario
+    return dicionario
 
 def gravar_arquivo(dicionario, arquivo):
     with open(arquivo, "w") as arq_json:
